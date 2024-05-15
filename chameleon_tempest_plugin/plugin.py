@@ -22,7 +22,7 @@ from tempest.test_discover import plugins
 from chameleon_tempest_plugin import config as project_config
 
 
-class SampleTempestPlugin(plugins.TempestPlugin):
+class ChameleonTempestPlugin(plugins.TempestPlugin):
     def load_tests(self):
         base_path = os.path.split(os.path.dirname(
             os.path.abspath(__file__)))[0]

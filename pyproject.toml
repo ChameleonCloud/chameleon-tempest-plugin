@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chameleon_tempest_plugin"
+version = "0.0.1"
+dependencies = [
+    "tempest",
+    "blazar-tempest-plugin",
+]
+
+[project.entry-points."tempest.test_plugins"]
+
+chameleon_tempest_plugin = "chameleon_tempest_plugin.plugin:ChameleonTempestPlugin"
